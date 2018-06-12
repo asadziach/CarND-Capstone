@@ -3,7 +3,7 @@
     <node pkg="tl_detector" type="tl_detector.py" name="tl_detector" output="screen" cwd="node">
         <param name="max_visible_distance" value="100" />
         <param name="model" value="SSDinception_coco_bosch_real_frozen.pb" />
-        <param name="classifier_threshold" value="0.5" />
+        <param name="classifier_threshold" value="0.2" />
         <param name="pinhole_camera_visible_check" type="bool" value="true"/>
     </node>
     <node pkg="tl_detector" type="light_publisher.py" name="light_publisher" output="screen" cwd="node"/>
